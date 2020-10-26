@@ -1,0 +1,41 @@
+@charset"utf-8";
+
+body{ 
+	font:1rem "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", Meiryo, "メイリオ", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+
+}
+
+header{
+	background-color: aquamarine
+}
+.inner {
+	width: 950px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.cf::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+header ul li{
+	float:right;
+	display:flex;
+	margin: 10px; 
+}
+main div h3{
+	margin: left;
+	float:center;
+	text-align:center;
+}
+main div p{
+	width: 475px;
+	margin: auto
+}
+main{
+		display: flex
+	flex-wrap: wrap
+}
+#main-visual{
+	float:right;
+}

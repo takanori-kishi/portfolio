@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+body {
+	font: 100% / 1.5 "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", sans-serif;
+	color: #565656;
+}
+.inner {
+	width: 940px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.cf::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+/* header */
+
+
+
+
+
+
+/* nav */
+
+
+
+
+
+/* contents */
+
+
+
+
+/* footer */
+
+
+
+
+.header {
+	background: #96cc28;
+	padding-top: 10px;
+}
+#head-title {
+	height: 60px;
+	width: 356px;
+	padding-top: 10px;
+}
+nav {
+	float: right;
+}
+nav li {
+	float: left;
+	height: 93px;
+	width: 140px;
+}
+nav li + li {
+}
+
+nav a {
+	color: #3d5a2c;
+	background: url(../images/nav_bg.png) no-repeat;
+	display: block;
+	height: 100px;
+	text-align: center;
+	padding-top: 60px;
+	box-sizing: border-box;
+}
+section {
+	padding: 40px 0px;
+}
+
+section.about {
+	background: url(../images/main_visual.png) no-repeat right 110px;
+	padding: 60px 0px;
+}
+
+h1 {
+	font-size: 2.5em;
+	color: #5a5e20;
+	margin-bottom: 10px;
+}
+.lead {
+	margin-bottom: 10px;
+	padding-right: 385px;
+}
+.bg-beige {
+	background: #f6f4dc;
+}
+h2 {
+	font-size: 1.875rem;
+	line-height: 1;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	border-left: 8px solid #e9df9b;
+}
+header h2 {
+	font-size: 2.5em;
+	padding-left: 20px;
+	border-left-width: 10px;
+	float: left;
+}
+header h2 + a {
+	float: right;
+}
+.menu-list li {
+	float: left;
+	width: 220px;
+}
+.menu-list li a p {
+	text-decoration: underline;
+}
+
+section header {
+	margin-bottom: 30px;
+}
+
+.menu-list li + li {
+	margin-left: 16px;
+}
+h3 {
+	font-size: 1.125em;
+	color: #59592a;
+	margin-bottom: 25px;
+}
+
+.box_right {
+	float: right;
+	width: 460px;
+}
+.box_left p + p{
+	margin-top: 15px;
+}
+
+.box_left {
+float:left;
+width:460px;
+}
+.ico-arrow {
+	background: url(../images/arrow.png) no-repeat left 5px;
+	padding-left: 20px;
+}
+
+h3.ico-arrow {
+	padding-left: 25px;
+}
+.box_left a {
+	color: #378227;
+	text-decoration: underline;
+	margin-left: 1em;
+}
+
+.social_links li{
+	float:left;
+	width:220px;
+	margin-bottom:20px;
+	}
+	
+.social_links li:nth-child(even) {
+	margin-left:10px;
+}
+footer {
+	background: url(../images/footer_bg.gif) repeat center center;
+	padding-top: 30px;
+}
+footer address p {
+	background: url(../images/pin.png) no-repeat 5px top;
+	padding-left: 30px;
+	font-size: 1.75em;
+	color: #7b7f49;
+	letter-spacing: 0.05em;
+	margin-bottom: 35px;
+}
+footer address a{
+	margin-left: 20px;
+}
+dt.dd {
+	float: left;
+}
+dt {
+	width: 4em;
+}
+dt:nth-child(even) {
+	width: 6em;
+}
+dd{
+	width:cacl(50% - 4em);
+	}
+dd:nth-of-type(even){
+	width:cacl(50% - 6em);dl {
+	margin-bottom: 40px;
+}
+.copyright {
+	color: #204800;
+	background: #96cc28;
+	text-align: center;
+	padding: 20px 0px 30px;
+}
