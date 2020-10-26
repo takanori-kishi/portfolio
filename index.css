@@ -82,7 +82,7 @@ section{
 	font-weight: 400;
 }
 .season2{
-	background-image: url(../images/back3.jpg) no-repeat;
+	background-image: url(images/back3.jpg) no-repeat;
 	background-size:cover;/*画像の縦横の比率を保持した状態で背景領域全体を常に画像がカバー*/
 	background-position:50%;/*上下左右ともに中央に寄せる*/
 	font-size: 1.5rem;
@@ -92,7 +92,7 @@ section{
 }
 
 .season3{
-	background-image: url(../images/back4.jpg) no-repeat;
+	background-image: url(images/back4.jpg) no-repeat;
 	background-size:cover;/*画像の縦横の比率を保持した状態で背景領域全体を常に画像がカバー*/
 	background-position:50%;/*上下左右ともに中央に寄せる*/
 	font-size: 2.0rem;
@@ -103,7 +103,7 @@ section{
 	padding: 0 30px;
 }
 .season4{
-	background-image: url(../images/back5.jpg) no-repeat;
+	background-image: url(images/back5.jpg) no-repeat;
 	background-size:cover;/*画像の縦横の比率を保持した状態で背景領域全体を常に画像がカバー*/
 	background-position:50%;/*上下左右ともに中央に寄せる*/
 	display: flex;
@@ -115,7 +115,7 @@ section{
 	font-weight: 400;
 }
 .season5{
-	background-image: url(../images/back6.jpg) no-repeat;
+	background-image: url(images/back6.jpg) no-repeat;
 	background-size:cover;/*画像の縦横の比率を保持した状態で背景領域全体を常に画像がカバー*/
 	background-position:50%;/*上下左右ともに中央に寄せる*/
 	display: flex;
