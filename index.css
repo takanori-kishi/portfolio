@@ -4,7 +4,7 @@ header{
 	display: block;
 	margin: 0 auto;
 	height: auto;
-	background: url(images/back.jpg) no-repeat;
+	background: url(images/back.jpg);
 	background-size:cover;/*画像の縦横の比率を保持した状態で背景領域全体を常に画像がカバー*/
 	background-position:50%;/*上下左右ともに中央に寄せる*/
 	text-align: center;
