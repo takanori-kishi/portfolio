@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+header{
+	display: block;
+	margin: 0 auto;
+	height: auto;
+	background: url(../images/back.jpg) no-repeat;
+	background-size:cover;/*画像の縦横の比率を保持した状態で背景領域全体を常に画像がカバー*/
+	background-position:50%;/*上下左右ともに中央に寄せる*/
+	text-align: center;
+}
+h1{
+	padding: 5% 0 0 0;
+	font-size: 120px;
+	color: #fff;
+	text-shadow: 3px 3px 5px #6e6e6e;
+	font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+nav ul{
+	display: flex;
+	justify-content: space-around;
+	margin: 5%;
+}
+li{
+	display: inline-block;
+	margin: 0 auto;
+}
+top-footer{
+	display: block;
+	margin: 10% auto;
+}
+/*
+	.comment{
+		display: none;
+	}
+*/
+.down img{
+	display: block;
+	margin: 15px auto;
+	width: 90px;
+	transform: rotate( 180deg );
+}
+li {
+    position:relative;
+}
+.comment {
+    width:130px;
+    padding:10px;
+    font-size:12px;
+    margin:-30px 0 0;
+    background-color:#666;
+    color:#fff;
+    position:absolute;
+    right:-70px;
+    top: 50%;
+}
+.comment:before {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-color: rgba(102, 102, 102, 0);
+  border-right-color: #5e5e5e;
+  border-width: 8px;
+  margin-top: -8px;
+}
+section{
+	height: 600px;
+	display: flex;
+	align-items: center;
+}
+.season1{
+	background: url(../images/back1.jpg) no-repeat;
+	background-size:cover;/*画像の縦横の比率を保持した状態で背景領域全体を常に画像がカバー*/
+	background-position:50%;/*上下左右ともに中央に寄せる*/
+	 font-size: 2.0rem;
+	text-shadow: -1px -2px 3px #808080,0px -3px 2px #d1eefe;
+	/*shadowは背景色の空と同じにしてみました	*/
+	font-weight: 400;
+}
+.season2{
+	background: url(../images/back3.jpg) no-repeat;
+	background-size:cover;/*画像の縦横の比率を保持した状態で背景領域全体を常に画像がカバー*/
+	background-position:50%;/*上下左右ともに中央に寄せる*/
+	font-size: 1.5rem;
+	text-shadow: -1px -2px 3px #808080;
+	display: flex;
+	justify-content: center;
+}
+
+.season3{
+	background: url(../images/back4.jpg) no-repeat;
+	background-size:cover;/*画像の縦横の比率を保持した状態で背景領域全体を常に画像がカバー*/
+	background-position:50%;/*上下左右ともに中央に寄せる*/
+	font-size: 2.0rem;
+	color: #f1ca00;
+	font-weight: 400;
+}
+.season3 img{
+	padding: 0 30px;
+}
+.season4{
+	background: url(../images/back5.jpg) no-repeat;
+	background-size:cover;/*画像の縦横の比率を保持した状態で背景領域全体を常に画像がカバー*/
+	background-position:50%;/*上下左右ともに中央に寄せる*/
+	display: flex;
+	justify-content:center;
+	font-size: 2.0rem;
+	flex-direction: row-reverse;
+		text-shadow: -1px -2px 3px #808080,0px -3px 2px #d1eefe;
+	/*shadowは背景色の空と同じにしてみました	*/
+	font-weight: 400;
+}
+.season5{
+	background: url(../images/back6.jpg) no-repeat;
+	background-size:cover;/*画像の縦横の比率を保持した状態で背景領域全体を常に画像がカバー*/
+	background-position:50%;/*上下左右ともに中央に寄せる*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.home{
+	text-align: center;
+}
