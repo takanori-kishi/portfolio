@@ -1,0 +1,701 @@
+@charset "utf-8";
+
+/* icon font */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;  /* Preferred icon size */
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+	/* Support for IE. */
+	font-feature-settings: 'liga';
+	vertical-align: -0.2em;
+}
+/* common styles */
+body {
+	font: 1rem / 1.5 "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", Meiryo, "メイリオ", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+	color: #565656;
+}
+.inner {
+	width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.cf::after {
+	display: block;
+	clear: both;
+	content: "";
+}
+header {
+	background: #565656;
+	display: -webkit-flex;
+	display: flex;
+	padding: 10px 30px;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-align-items: center;
+	align-items: center;
+}
+#header-title a {
+	color: #fff;
+}
+#header-title img {
+	float: left;
+	margin-right: 15px;
+}
+#header-title p {
+	font-size: 0.75rem;
+}
+#header-title em {
+	font-family: "Noto Serif JP", serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+nav li {
+	display: inline-block;
+	margin-right: 25px;
+}
+nav li:last-child {
+	margin-right: 0px;
+}
+nav a {
+	font-size: 0.75rem;
+	color: #fff;
+}
+nav a:hover {
+	text-decoration: underline;
+}
+nav .material-icons {
+	font-size: 1.25rem;
+	margin-right: 10px;
+}
+h1 {
+	font-family: "Noto Serif JP", serif;
+	color: #fff;
+	background: url(../images/mv.png) no-repeat center / cover;
+	letter-spacing: 0.15em;
+	text-align: center;
+	height: 628px;
+	margin-bottom: 50px;
+	padding-top: 240px;
+	box-sizing: border-box;
+	text-shadow: 0 0 10px rgba(0,0,0,.8);
+}
+
+
+
+
+
+
+
+h1 span {
+	font-size: 1.25rem;
+	display: block;
+}
+
+h1 span::after {
+	background: #fff;
+	vertical-align: middle;
+	display: inline-block;
+	height: 1px;
+	width: 6em;
+	margin-left: 1em;
+	content: "";
+}
+h1 em {
+	font-size: 4.5rem;
+	font-weight: bold;
+}
+#inpage-links {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	margin-bottom: 100px;
+}
+#inpage-links li {
+	flex: 1;
+}#inpage-links li+li {
+	border-left: 1px solid #cdcdcd;
+}
+#inpage-links a {
+	line-height: 1.8;
+	color: #cdcdcd;
+	letter-spacing: 0.05em;
+	text-align: center;
+	display: block;
+	padding: 10px 0px 9px;
+	-webkit-transition: background-color 0.5s ease-in-out;
+	-moz-transition: background-color 0.5s ease-in-out;
+	-ms-transition: background-color 0.5s ease-in-out;
+	-o-transition: background-color 0.5s ease-in-out;
+	transition: background-color 0.5s ease-in-out;
+	font-size: 0.75rem;
+}
+#inpage-links a:hover {
+	background: #dcfcdc;
+}
+#inpage-links em {
+	font-size: 1rem;
+	display: block;
+	color: #565656;
+}
+section {
+	margin-bottom: 100px;
+}
+section h2 {
+	font-family: "Noto Serif JP", serif;
+	line-height: 1.4;
+	letter-spacing: 0.15em;
+	text-align: center;
+	margin-bottom: 80px;
+	padding-top: 20px;
+	color: #cdcdcd;
+}
+h2 em {
+	font-size: 2.5rem;
+	display: block;
+	color: #565656;
+}
+section figure {
+	margin: 0px 0px 30px 25px;
+	float: right;
+	width: 400px;
+}
+section:nth-child(even) figure {
+	margin: 0px 25px 30px 0px;
+	float: left;
+}
+figcaption {
+	color: #aaa;
+	text-align: center;
+	padding-top: 10px;
+}
+.text-outer {
+	float: left;
+	width: 555px;
+	margin-bottom: 30px;
+}
+section:nth-child(even) .text-outer {
+	float: right;
+}
+section p {
+	line-height: 1.75;
+	text-indent: 1em;
+}
+section p+p {
+	margin-top: 20px;
+}
+.text-outer p:first-child {
+	font-size: 2rem;
+	background: url(../images/bg_lead.png) no-repeat center center;
+	text-align: center;
+	text-indent: 0;
+	margin-bottom: 40px;
+	padding-bottom: 20px;
+}
+
+.text-outer a {
+	color: #000;
+	background: #f1f1f1;
+	display: inline-block;
+	padding: 10px 20px;
+}
+.link {
+	text-align: center;
+	text-indent: 0;
+}
+iframe {
+	display: block;
+	margin: 30px 0px;
+	height: 320px;
+	width: 100%;
+	border-style: none;
+}
+#contact ul {
+	display: flex;
+	justify-content: space-between;
+	margin: 0px auto 40px;
+	width: 680px;
+}
+#contact li {
+	width: 48%;
+	border: 1px solid #333;
+}
+#contact li a {
+	font-size: 1.25rem;
+	color: #333;
+	text-align: center;
+	display: block;
+	padding: 20px 0.5em 20px 0px;
+}
+#contact li .material-icons {
+	margin-right: 0.5em;
+}
+.tell-outer {
+	text-align: center;
+	margin-top: 30px;
+}
+.tell-outer a {
+	color: #333;
+	letter-spacing: 0.1em;
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+.tell-outer .material-icons {
+	font-size: 2rem;
+	margin-right: 15px;
+}
+.tell-outer p {
+	font-size: 0.875rem;
+	line-height: 1.5;
+	text-indent: 0;
+	margin-top: 20px;
+}
+
+aside {
+	display: flex;
+	align-items: center;
+}
+aside h3 {
+	font-size: 1.75rem;
+	flex-basis: 20%;
+}
+aside ul {
+	display: flex;
+	flex-basis: 80%;
+	justify-content: space-between;
+	align-items: center;
+}
+aside li {
+	flex-basis: 32%;
+}
+aside a {
+	color: #333;
+	background: #f1f1f1;
+	text-align: center;
+	display: block;
+	padding: 10px 0px;
+	border: 1px solid #f1f1f1;
+}
+#page-top {
+	border-radius: 10px;
+	line-height: 1.25;
+	background: #fff;
+	text-align: center;
+	position: fixed;
+	right: 40px;
+	bottom: 30px;
+}
+#page-top a {
+	text-shadow: 0 0 5px #fff;
+	box-sizing: border-box;
+	font-size: 0.75rem;
+	font-weight: bold;
+	color: #565656;
+	letter-spacing: 0.05em;
+	display: block;
+	padding: 8px 15px;
+}
+#page-top a::before {
+	background: url(../images/img_pagetop.png) no-repeat;
+	display: block;
+	margin: 0px auto 5px;
+	height: 40px;
+	width: 20px;
+	position: relative;
+	top: 0px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	content: "";
+}
+#page-top a:hover::before {
+	top: -5px;
+}
+footer {
+	background: url(../images/bg_city.png) repeat-x center top / auto 100px;
+	text-align: center;
+	margin-top: 100px;
+	padding-top: 100px;
+	animation: bg-slider 60s linear infinite;
+}
+
+#footer-title {
+	color: #333;
+	background: #defcdc;
+	padding: 100px 0px 10px;
+	font-family: "Noto Serif JP", serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+}
+address {
+	font-size: 0.75rem;
+	color: #333;
+	background: #defcdc;
+	padding-bottom: 80px;
+}
+address a {
+	background: #fff;
+	display: inline-block;
+	padding: 4px 10px;
+	border: 1px solid #aaa;
+}
+footer ul {
+	background: #defcdc;
+	text-align: center;
+	padding-bottom: 50px;
+}
+footer li {
+	display: inline-block;
+	margin-right: 20px;
+}
+footer li:last-child {
+	margin-right: 0px;
+}
+footer li a {
+	font-size: 0.75rem;
+	color: #333;
+}
+footer .material-icons {
+	font-size: 1.25rem;
+	color: #4dc31f;
+	margin-right: 10px;
+}
+footer small {
+	font-size: 0.75rem;
+	color: #fff;
+	background: #4dc31f;
+	text-align: center;
+	display: block;
+	padding: 15px 0px 20px;
+}
+/* keyframe */
+@keyframes bg-slider {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: -1467px 0;
+	}
+}
+/* media */
+@media only screen and (max-width:640px){
+	.inner,section figure,.text-outer,#contact ul {
+		width: 100%;
+	}
+	.inner {
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+	header {
+		flex-direction: column;
+	}
+	#header-title img {
+		width: 48px;
+		display: block;
+	}
+	#header-title p {
+		font-size: .5rem;
+		white-space: normal;
+		float: left;
+		width: -webkit-calc(100% - 63px);
+		width: calc(100% - 63px);
+	}
+	#header-title em {
+		clear: left;
+		text-align: center;
+		display: block;
+		padding-top: 10px;
+	}
+	nav ul {
+		letter-spacing: -.4em;
+	}
+	nav li {
+		text-align: center;
+		letter-spacing: 0;
+		width: 50%;
+		margin-right: 0;
+		padding-top: 10px;
+	}
+	h1 span {
+		font-size: .875rem;
+	}
+	h1 em {
+		font-size: 2.5rem;
+	}
+	#inpage-links {
+		flex-wrap: wrap;
+		margin-bottom: 40px;
+	}
+	#inpage-links li {
+		flex: 0 0 50%;
+	}
+	#inpage-links li+li {
+		border-left: none;
+	}
+	section {
+		margin-bottom: 40px;
+	}
+	h2 em {
+		font-size: 1.5rem;
+	}
+	.text-outer p:first-child {
+		background-size: contain;
+		font-size: 1.25rem;
+		margin-bottom: 20px;
+	}
+	section figure,.text-outer {
+		float: none;
+	}
+	section figure {
+		margin: 0 0 30px;
+	}
+	figure img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+	#contact li a {
+		font-size: 1rem;
+		padding: 10px 0.5em 10px 0;
+	}
+	.tell-outer a {
+		font-size: 1.5rem;
+	}
+	.tell-outer .material-icons {
+		font-size: 1.25rem;
+	}
+	aside {
+		flex-direction: column;
+	}
+	aside h3 {
+		font-size: 1.5rem;
+		margin-bottom: 10px;
+	}
+	aside ul {
+		width: 100%;
+		align-items: stretch;
+	}
+	aside a {
+		font-size: 0.75rem;
+		height: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+	/* pagetop */
+	#page-top {
+		width: 50px;
+		height: 50px;
+		overflow: hidden;
+		right: 10px;
+		bottom: 10px;
+	}
+	#page-top a {
+		color: transparent;
+		font-size: .5rem;
+		height: 100%;
+		position: relative;
+	}
+	#page-top a::before {
+		background-size: contain;
+		width: 10px;
+		height: 24px;
+		margin: auto;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+	}
+	/* footer */
+	footer {
+		background-size: auto 50px;
+		margin-top: 50px;
+		padding-top: 50px;
+	}
+	#footer-title {
+		font-size: 1rem;
+		padding-top: 50px;
+	}
+	address {
+		padding-bottom: 40px;
+	}
+	footer ul {
+		display: none;
+	}
+}
+@media only screen and (max-width:640px){
+	.inner,section figure,.text-outer,#contact ul {
+		width: 100%;
+	}
+	.inner {
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+	header {
+		flex-direction: column;
+	}
+	#header-title img {
+		width: 48px;
+		display: block;
+	}
+	#header-title p {
+		font-size: .5rem;
+		white-space: normal;
+		float: left;
+		width: -webkit-calc(100% - 63px);
+		width: calc(100% - 63px);
+	}
+	#header-title em {
+		clear: left;
+		text-align: center;
+		display: block;
+		padding-top: 10px;
+	}
+	nav ul {
+		letter-spacing: -.4em;
+	}
+	nav li {
+		text-align: center;
+		letter-spacing: 0;
+		width: 50%;
+		margin-right: 0;
+		padding-top: 10px;
+	}
+	h1 span {
+		font-size: .875rem;
+	}
+	h1 em {
+		font-size: 2.5rem;
+	}
+	#inpage-links {
+		flex-wrap: wrap;
+		margin-bottom: 40px;
+	}
+	#inpage-links li {
+		flex: 0 0 50%;
+	}
+	#inpage-links li+li {
+		border-left: none;
+	}
+	section {
+		margin-bottom: 40px;
+	}
+	h2 em {
+		font-size: 1.5rem;
+	}
+	.text-outer p:first-child {
+		background-size: contain;
+		font-size: 1.25rem;
+		margin-bottom: 20px;
+	}
+	section figure,.text-outer {
+		float: none;
+	}
+	section figure {
+		margin: 0 0 30px;
+	}
+	figure img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+	#contact li a {
+		font-size: 1rem;
+		padding: 10px 0.5em 10px 0;
+	}
+	.tell-outer a {
+		font-size: 1.5rem;
+	}
+	.tell-outer .material-icons {
+		font-size: 1.25rem;
+	}
+	aside {
+		flex-direction: column;
+	}
+	aside h3 {
+		font-size: 1.5rem;
+		margin-bottom: 10px;
+	}
+	aside ul {
+		width: 100%;
+		align-items: stretch;
+	}
+	aside a {
+		font-size: 0.75rem;
+		height: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+	/* pagetop */
+	#page-top {
+		width: 50px;
+		height: 50px;
+		overflow: hidden;
+		right: 10px;
+		bottom: 10px;
+	}
+	#page-top a {
+		color: transparent;
+		font-size: .5rem;
+		height: 100%;
+		position: relative;
+	}
+	#page-top a::before {
+		background-size: contain;
+		width: 10px;
+		height: 24px;
+		margin: auto;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+	}
+	/* footer */
+	footer {
+		background-size: auto 50px;
+		margin-top: 50px;
+		padding-top: 50px;
+	}
+	#footer-title {
+		font-size: 1rem;
+		padding-top: 50px;
+	}
+	address {
+		padding-bottom: 40px;
+	}
+	footer ul {
+		display: none;
+	}
+}
+	
