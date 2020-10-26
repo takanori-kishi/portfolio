@@ -1,0 +1,139 @@
+@charset "utf-8";/* common styles */
+body {
+	font: 1rem / 1.5 "Yu Gothic Medium","游ゴシック Medium","YuGothic","游ゴシック体","Meiryo","メイリオ","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3",sans-serif;
+	background-color: #E9872E
+;
+}
+.inner {
+	width: 950px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.cf::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+#title {
+	float: left;
+}
+h2 {
+	padding-bottom: 5px;
+	border-bottom: 1px dashed #111;
+}
+aside h2 {
+	padding-top: 0px;
+}
+aside h2 img {
+	margin: 0px auto;
+}
+h3 {
+	font-size: 0.875rem;
+	color: #fff;
+	margin: 15px 0px;
+}
+form {
+	font-size: 0.75rem;
+	color: #fff;
+}
+aside {
+}
+
+
+
+
+
+aside {
+	background: url(../images/search_back.jpg) no-repeat;
+	padding: 25px 15px 0px;
+	height: 360px;
+	width: 260px;
+	box-sizing: border-box;
+	position: absolute;
+	top: 315px;
+	right: 0px;/*画像を真ん中に寄せる
+	*/
+}
+.content-outer {
+	position: relative;
+}
+body footer {
+	font-size: 0.75rem;
+	background: #FFFFFF;
+}
+footer > div {
+	display: flex;
+	padding: 15px 0px;
+	justify-content:space-between;/*左右の余白の方法、どうやって設定するか、分配するか？最初と最後の余白がなしで残った余白が均等に割り当てられる*/
+}
+footer li {
+	margin-right: 10px;
+}
+foooter a {
+	color: #FFF;
+}
+
+
+
+
+
+
+
+.header-links   {
+	float: right;
+	margin-top: 20px;
+}
+.header-links li {
+	display: inline;
+}
+.header-links li+li {
+	margin-left: 10px;
+}
+.header-links li a {
+	font-size: 0.875px;
+	background: url(../images/icon_dog.gif);
+}
+nav ul {
+	display: flex;
+}
+.nav.2 a {
+	background: url(../images/nav_shop.gif);
+}
+main {
+	display: flex;
+	flex-wrap:wrap;
+}
+h1 {
+	width: 100%;
+	margin-bottom: 15px;
+}
+.link {
+	clear: left;
+	float: right;
+	padding-top: 10px;
+}
+.text-caption {
+	float: left;
+	margin: 0px 10px 10px 0px;
+}
+
+
+section {
+	background: #f9ebb6;
+	margin: 0px 15px 15px 0px;
+	padding: 5px 12px 10px;
+	width: 330px;
+	box-sizing:border-box;
+}
+section:last-child {
+	width:675px;
+}
+
+
+
+
+
+nav li {
+	flex: 1;
+	flex-wrap: wrap;
+}
