@@ -1,0 +1,10 @@
+@charset"utf-8";
+body{
+    background: orange;
+}
+h1,p{
+    color:white;
+}
+p{
+    font-size:18px;
+}
