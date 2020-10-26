@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+/* common */
+body {
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", "YuGothic", "游ゴシック体", "Meiryo", "メイリオ", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+	margin: 0px;
+}
+.inner {
+	width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.is_pc_none {
+	display: none;
+}
+.is_sp_none {
+	display: block;
+}
+/* header */
+header {
+	padding-top: 50px;
+}
+.sitename {
+	margin-bottom: 30px;
+}
+
+.sitename img {
+	margin-right: auto;
+	margin-left: auto;
+}
+nav {
+	padding: 10px 0px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+nav ul {
+	list-style-type: none;
+	letter-spacing: -.4em;
+}
+nav li {
+	letter-spacing: normal;
+	display: inline-block;
+	width: 25%;
+}
+nav a {
+	text-align: center;
+	display: block;
+	color: #000;
+	text-decoration: none;
+}
+nav a:hover {
+	color: #fff;
+	background: #57b042;
+}
+/* main content */
+main {
+	display: block;
+}
+h1 {
+	color: #FFF;
+	background: url(../images/bg.png) no-repeat center center;
+	text-align: center;
+	height: 280px;
+	text-shadow: 0 0 5px rgba(0,0,0,.5);
+	margin: 15px 0 50px;
+	box-sizing: border-box;
+	padding-top: 100px;
+	font-size: 3rem;
+}
+section {
+	margin-bottom: 10px;
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.box {
+	width: 50%;
+	margin-bottom: 50px;
+	float: left;
+	padding: 0px 10px;
+	box-sizing: border-box;
+}
+
+.box img {
+	float: left;
+	margin-right: 20px;
+}
+
+.box a {
+	color: #fff;
+	text-decoration: none;
+	background: #57b042;
+	display: inline-block;
+	padding: 8px 10px;
+	margin-top: 30px;
+	border: 1px solid #57b042;
+}
+.link {
+	text-align: center;
+	clear: left;
+}
+.link a:hover {
+	color: #57b042;
+	background: #FFF;
+}
+
+.clearfix:after {
+	display: block;
+	clear: both;
+	content: "";
+}
+
+aside {
+	padding: 20px 0px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+aside h3 {
+	margin: 0px auto 15px;
+	width: 12em;
+	border: 1px solid #ccc;
+	text-align: center;
+	padding: 10px 0px;
+	color: #CCC;
+}
+aside ul {
+	text-align: center;
+}
+
+aside li {
+	display: inline-block;
+}
+
+aside li+li {
+	margin-left: 20px;
+}
+aside a {
+	font-size: 0.875rem;
+	color: #000;
+	text-decoration: none;
+}
+aside a:hover {
+	color: #57b042;
+}
+footer {
+	text-align: center;
+}
+footer small {
+	font-size: 0.75rem;
+}
+
+@media only screen and (max-width: 640px){
+		.inner {
+		width: 100%;
+	}
+	.is_pc_none {
+		display: block;
+	}
+	.is_sp_none {
+		display: none;
+	}
+.sitename img {
+		max-width: 80%;
+		min-width: 200px;
+		height: auto;
+	}
+	nav li {
+		width: 50%;
+	}
+	h1 {
+		height: 300px;
+		padding-top: 110px;
+	}
+	.box {
+		width: 100%;
+		float: none;
+	}
+	.box img {
+		float: none;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
