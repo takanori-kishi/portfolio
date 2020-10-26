@@ -1,0 +1,48 @@
+/*============================
+	reset styles
+============================*/
+html,body,div,span,iframe,
+h1,h2,h3,h4,h5,h6,p,
+a,em,img,small,strong,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,figcaption,figure,address,
+footer,header,nav,section {
+margin:0;
+padding:0;
+border:0;
+outline:0;
+font-size:100%;
+font-style:normal;
+vertical-align:baseline;
+background:transparent;
+}
+article,aside,figcaption,figure,footer,header,menu,nav,section {
+display:block;
+}
+ul {
+list-style:none;
+}
+a {
+text-decoration:none;
+}
+img {
+vertical-align:bottom;
+}
+table {
+border-collapse:collapse;
+border-spacing:0;
+}
+input,select,button,textarea {
+background-color:#fff;
+appearance:none;
+}
+input,select {
+vertical-align:middle;
+}
+input:focus,select:focus,button:focus,textarea:focus {
+outline:0;
+border:0;
+box-shadow:none;
+}

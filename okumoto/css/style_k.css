@@ -1,0 +1,397 @@
+@charset "utf-8";/* common */
+body {
+	font: 100% / 1.5 "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", sans-serif;
+	color: #515151
+;
+}
+.inner {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.pc_none {
+	display: none;
+}
+/* header */
+header {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: 40px;
+	position: relative;
+}
+#logo {
+	padding-left: 25px;
+}
+address {
+	text-align: right;
+	padding-right: 30px;
+}
+header p {
+	font-size: 0.875rem;
+	margin-bottom: 5px;
+}
+header p:first-child {
+	font-size: 1rem;
+	font-weight: bold;
+}
+address a {
+	color: #000;
+}.link {
+	color: #EC9900
+;
+	text-decoration: underline;
+}
+h1 {
+	text-shadow: 2px 2px 5px #fff,
+		2px -2px 5px #fff,
+		-2px 2px 5px #fff,
+		-2px -2px 5px #fff;
+	font-size: 2.1875rem;
+	line-height: 1.428;
+	letter-spacing: 0.05em;
+	height: 350px;
+	width: 100%;
+	color: #082648
+;
+	background: url(../images/okumoto_main_visual.jpg) no-repeat;
+	padding: 140px 0px 0px 60px;
+	margin-top: 30px;
+	box-sizing: border-box;
+}
+nav {
+	width: 100%;
+}
+nav ul {
+	display: flex;
+}
+nav li {
+	flex: 1;
+}
+nav a {
+	font-size: 1.5rem;
+	color: #fff;
+	background: #00B8EE
+;
+	text-align: center;
+	display: block;
+	padding: 20px 0px 15px;
+	border-right: 1px dotted #fff;
+}
+nav li:first-child a {
+	border-left: 1px dotted #fff;
+}
+nav span {
+	font-size: 0.875rem;
+	display: block;
+}
+#trg_nav {
+	color: transparent;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	left: 20px;
+	top: 35px;
+	z-index: 10;
+	display: none;
+}
+#trg_nav::before,
+#trg_nav::after,
+#trg_nav span {
+	width: 100%;
+	background: #00B8EE
+;
+	display: block;
+	height: 2px;
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+#trg_nav::before, #trg_nav::after {
+	content: "";
+}
+#trg_nav::before {
+	transform: translateY(-15px);
+}
+#trg_nav.is_active::before {
+	transform: translateY(-50%) rotate(-45deg);
+}
+#trg_nav::after {
+	transform: translateY(15px);
+}
+#trg_nav.is_active::after {
+	transform: translateY(-50%) rotate(45deg);
+}
+#trg_nav span {
+	overflow: hidden;
+	transform: translateY(-50%);
+}
+#trg_nav.is_active span {
+	background-color: transparent;
+}
+#overlay{
+	background: linear-gradient(#fff, #fff 20%,
+	rgba(0,0,0,0.5) 20%, rgba(0,0,0,0.5)100%);
+	opacity:0;
+	position: fixed;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	z-index:5;
+	}
+.content_outer {
+	display: flex;
+	justify-content: space-between;
+}
+main {
+	padding: 40px 0px 0px 25px;
+	width: 665px;
+	box-sizing: border-box;
+}
+section {
+	margin-bottom: 40px;
+}
+section h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #00B8EE
+;
+	background: url(../images/ico_dolphin.png) no-repeat left center;
+	margin-bottom: 20px;
+	padding-left: 45px;
+}
+section p {
+	font-size: 0.875rem;
+	padding-left: 40px;
+	margin-bottom: 5px;
+}
+.date {
+	color: #00B8EE
+;
+	width: 8em;
+	display: inline-block;
+}
+section ul {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 8px;
+}
+section li {
+	width: 200px;
+}
+section li a {
+	display: block;
+}
+h3 {
+	font-size: 1.25rem;
+	color: #00B8EE
+;
+	padding: 25px 0px 20px 15px;
+}
+section li p {
+	margin-bottom: 0px;
+	padding-left: 15px;
+	font-size: 0.875rem;
+	line-height: 1.428;
+	color: #000;
+}
+aside {
+	padding: 30px 30px 0px 0px;
+	width: 250px;
+}
+aside h2 {
+	font-size: 1.5625rem;
+	color: #00B8EE
+;
+	background: #FFFAB6
+;
+	letter-spacing: 0.15em;
+	text-align: center;
+	height: 40px;
+	padding-top: 8px;
+	box-sizing: border-box;
+	border-radius: 10px 10px 0 0;
+	margin-bottom: 20px;
+	line-height: 1;
+}
+dl {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding-left: 10px;
+}
+dt, dd {
+	margin-bottom: 10px;
+}
+dt {
+	font-size: 1.25rem;
+	line-height: 1.3;
+	color: #fff;
+	background: #00B8EE
+;
+	text-align: center;
+	padding: 10px 0px 8px;
+	width: 1.4em;
+}
+dt:nth-of-type(2) {
+	background: #EC9900
+;
+
+}
+dd {
+	width: calc(100% - 1.4em);
+	font-size: 1.5rem;
+	line-height: 1.1;
+	color: #00B8EE
+;
+	text-align: right;
+}
+dd:nth-of-type(2) {
+	color: #EC9900
+;
+}
+aside p {
+	font-size: 0.75rem;
+	padding: 0px 10px;
+	margin-bottom: 30px;
+}
+.text_large {
+	text-align: center;
+}.text_large a {
+	font-size: 1.25rem;
+	color: #00B8EE
+;
+}
+.text_large em {
+	font-size: 1.75rem;
+	padding: 0px 5px;
+}
+footer {
+	background: #BCE2F5
+;
+	padding-top: 25px;
+	border-top: 4px solid #00B8EE
+;
+}
+.footer_link {
+	background: url(../images/footer_bg.png) no-repeat right 30px center;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+	padding-left: 65px;
+	box-sizing: border-box;
+}
+.footer_link li {
+	width: 200px;
+}
+.footer_link li li {
+	margin-bottom: 10px;
+}
+.footer_link a {
+	color: #007FAC
+;
+	text-decoration: underline;
+}
+.footer_link li li a {
+	font-size: 0.875rem;
+}#pagetop {
+	width: 100%;
+	margin-bottom: 10px;
+}
+.copyright {
+	font-size: 0.875rem;
+	text-align: center;
+	padding: 10px 0px 20px;
+}@media only screen and (max-width: 640px){
+	#trg_nav,
+	.pc_none {
+		display:block;
+	}
+	.inner,
+	#logo img,
+	main,
+	section li {
+		width: 100%;
+	}
+	nav ul,
+	.content_outer,
+	section ul {
+		flex-direction: column;
+	}
+	header{
+		padding-top:30px;
+		}
+	#logo {
+		margin-bottom: 20px;
+		padding: 0 20px 0 80px;
+		position:reletive;
+		z-index:10;
+	}
+	#logo img {
+		height: auto;
+	}
+	nav {
+		opacity:0;
+		position: absolute;
+		top: 90px;
+		left: 0;
+		z-index: 15;
+		transition-duration:0.5s;
+	}
+	nav.is_active{
+		height:auto;
+		opacity:1;
+		z-index:15;
+		}
+	address {
+		padding: 0 20px;
+	}
+	h1 {
+		font-size: 1.5rem;
+		background-position: center;
+		padding: 140px 20px 0;
+	}
+	nav a {
+		height:0;
+		border-right: none;
+		border-bottom: 1px dotted #fff;
+		transition-duration:0.5s;
+	}
+	nav.is_active a {
+		height:60px;
+		}	nav li:first-child a {
+		border-left: none;
+		border-top: 1px dotted #fff;
+	}
+	section p {
+		padding: 0 20px 0 40px;
+	}
+	.date {
+		display: block;
+	}
+	section li img {
+		display: block;
+		margin: 0 auto;
+	}
+	section li + li {
+		margin-top: 20px;
+	}
+	aside {
+		margin: 0 auto;
+		padding: 0;
+	}
+	.content_outer {
+		padding-bottom: 50px;
+	}
+	.footer_link {
+		background-position: center;
+		background-size: contain;
+		height: 200px;
+	}
+	.footer_link li:not(#pagetop) {
+		display: none;
+	}
+}
